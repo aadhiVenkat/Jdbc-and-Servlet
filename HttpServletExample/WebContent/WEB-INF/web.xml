@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>HttpServletExample</display-name>
+  <welcome-file-list>
+    <welcome-file>Registration.html</welcome-file>
+  </welcome-file-list>
+  <servlet-mapping>
+  	<servlet-name>RegistrationPage</servlet-name>
+  	<url-pattern>/rp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>RegistrationPage</servlet-name>
+  	<servlet-class>org.student.HttpRequestExample.HttpRequestApp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RetrivePage</servlet-name>
+  	<url-pattern>/re</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>RetrivePage</servlet-name>
+  	<servlet-class>org.student.HttpRequestExample.HttpRequestGet</servlet-class>
+  </servlet>
+</web-app>
