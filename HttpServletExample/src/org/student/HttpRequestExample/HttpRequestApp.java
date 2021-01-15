@@ -38,7 +38,7 @@ public class HttpRequestApp extends HttpServlet{
 			pst.setDouble(3, perc);
 			pst.setString(4, dep);
 			pst.executeUpdate();
-			out.println("<http><body bgcolor='yellow'><h1>Data Stored Successfully<br><a href='Registration.html'>BACK</a></h1></body></html>");		
+			out.println("<html><body bgcolor='yellow'><h1>Data Stored Successfully<br><a href='Registration.html'>BACK</a></h1></body></html>");		
 			
 		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
